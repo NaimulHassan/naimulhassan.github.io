@@ -58,7 +58,6 @@ table, th, td {
           <td><b>Champion</b><br><br>Inter University Poster Presentation, Esonance 2017</td>
           <td>Team: BUET Unsullied<br>
           Undergraduate Team Members: Shadman Shahid, <i>K. M. Naimul Hassan</i>, Shakil Anwar<br>
-          Final at Islamic University of Technology, Gazipur, Bangladesh
           </td>
      </tr>
 
@@ -71,13 +70,15 @@ table, th, td {
 # Honors
 <font size="+1">
 <ol>
-     <li>Recipient, IEEE SPS Scholarship</li>
+     <li>Recipient, CCBS Summer Graduate Research Award</li>
      <ul>
-          <li>Session: 2024 - Present</li>
+          <li>Session: 2024</li>
+          <li>Center for Cognitive and Brain Sciences</li>
+          <li>The Ohio State University</li>
      </ul>
      <li>Recipient, IEEE SPS Scholarship</li>
      <ul>
-          <li>Session: 2024 - Present</li>
+          <li>Session: 2024</li>
      </ul>
      <li>Recipient, CSE Scarlet and Gray Award</li>
      <ul>
@@ -85,15 +86,11 @@ table, th, td {
           <li>Department of Computer Science and Engineering (CSE)</li>
           <li>The Ohio State University</li>
      </ul>
-     <li>Recipient, Scholarship of Merit (2011-2021)</li>
+     <li>Recipient, Post-graduate Fellowship (M.Sc.)</li>
      <ul>
-          <li>Intermediate and Secondary Education Board, Bangladesh</li> 
-          <li>Government scholarship for outstanding result in Higher Secondary Certificate (H.S.C), Secondary School Certificate (S.S.C) and Junior School Certificate (J.S.C) examinations</li>
-     </ul>
-     <li>Recipient, Scholarship of Merit (2008-2011)</li>
-     <ul>
-          <li>Primary Education Board, Bangladesh</li> 
-          <li>Government scholarship for outstanding result in Primary Schoralship examination</li>
+          <li>Session: 2021 - 2023</li>
+          <li>Department of Electrical and Electronic Engineering (EEE)</li>
+          <li>Bangladesh University of Engineering and Technology</li>
      </ul>
 </ol>
 </font> 

@@ -22,8 +22,6 @@ navigation:
     - title: About
       link: /index
       name: about
-    - title: Statement
-      link: /content/Research_Statement.pdf
     - title: Research
       link: /research
     - title: Awards/Honors

@@ -65,13 +65,13 @@ I also watch movies and tv shows in my free time. Here are some of my favorites-
 <a href="https://www.imdb.com/title/tt0903747/" target="_blank" rel="noreferrer"> <img src="https://storage.googleapis.com/pod_public/750/124250.jpg" alt="breaking bad" width="100" height="120"/> </a> 
 <a href="https://www.imdb.com/title/tt3032476/" target="_blank" rel="noreferrer"> <img src="https://pics.filmaffinity.com/Better_Call_Saul_TV_Series-187388662-large.jpg" alt="better call saul" width="100" height="120"/> </a>
 <a href="https://www.imdb.com/title/tt0386676/" target="_blank" rel="noreferrer"> <img src="https://i.pinimg.com/originals/42/1c/bd/421cbd7ee87104b77e8670aa7cc2f035.jpg" alt="the office" width="100" height="120"/> </a>
-<a href="https://www.imdb.com/title/tt0898266/" target="_blank" rel="noreferrer"> <img src="https://cdn.europosters.eu/image/1300/art-photo/the-big-bang-theory-crew-i106240.jpg" alt="tbbt" width="100" height="120"/> </a>
+<a href="https://www.imdb.com/title/tt0898266/" target="_blank" rel="noreferrer"> <img src="https://sw6.elbenwald.de/media/93/20/27/1707262805/E1080507_1.jpg" alt="tbbt" width="100" height="120"/> </a>
 <a href="https://www.imdb.com/title/tt1839578/" target="_blank" rel="noreferrer"> <img src="https://m.media-amazon.com/images/M/MV5BZDU1NzA5YzUtNTdmNy00NTVjLWFhNzEtYWI1NmNkNTA1ZDBhXkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_.jpg" alt="poi" width="100" height="120"/> </a>
 <a href="https://www.imdb.com/title/tt0944947/" target="_blank" rel="noreferrer"> <img src="https://i.pinimg.com/736x/ac/4f/fd/ac4ffd8309980a091dd1dc57abe908b4.jpg" alt="got" width="100" height="120"/> </a>
 <a href="https://www.imdb.com/title/tt0109830/" target="_blank" rel="noreferrer"> <img src="https://i.pinimg.com/originals/08/da/3e/08da3ea5505864992e79f32280bae84a.jpg" alt="gump" width="100" height="120"/> </a>
 <a href="https://www.imdb.com/title/tt0816692/" target="_blank" rel="noreferrer"> <img src="https://cdn.mos.cms.futurecdn.net/RwK5xCEK2U4cDHJ5z8fhvY.jpg" alt="interstellar" width="100" height="120"/> </a>
 <a href="https://www.imdb.com/title/tt1130884/" target="_blank" rel="noreferrer"> <img src="https://m.media-amazon.com/images/I/51MsI8xR-NL._AC_.jpg" alt="shutter" width="100" height="120"/> </a>
-<a href="https://www.imdb.com/title/tt0137523/" target="_blank" rel="noreferrer"> <img src="https://www.flore-maquin.com/wp-content/uploads/Fight_club_RVB_72.jpg" alt="fight club" width="100" height="120"/> </a>
+<a href="https://www.imdb.com/title/tt0137523/" target="_blank" rel="noreferrer"> <img src="https://i.ebayimg.com/images/g/4jsAAOSwM0FXIRDO/s-l1200.jpg" alt="fight club" width="100" height="120"/> </a>
 <a href="https://www.imdb.com/title/tt0111161/" target="_blank" rel="noreferrer"> <img src="https://i.pinimg.com/736x/94/9c/81/949c81eb8742d3a2c150137af5507bae.jpg" alt="shawshank" width="100" height="120"/> </a>
 <a href="https://www.imdb.com/title/tt0482571/" target="_blank" rel="noreferrer"> <img src="https://m.media-amazon.com/images/M/MV5BMjA4NDI0MTIxNF5BMl5BanBnXkFtZTYwNTM0MzY2._V1_.jpg" alt="prestige" width="100" height="120"/> </a>
 </p>

@@ -19,15 +19,15 @@ I love listening to music and playing piano/keyboard. Still a noob though!
 ## Canada
 <br>
 <p align="center"> 
-<a href="media/hobbies/canada-1.jpeg" target="_blank" rel="noreferrer"> <img src="media/hobbies/canada-1.jpeg" width="auto" height="250"/> </a>
-<a href="media/hobbies/canada-2.jpeg" target="_blank" rel="noreferrer"> <img src="media/hobbies/canada-2.jpeg" width="auto" height="250"/> </a>
+<a href="media/hobbies/canada-1.jpeg" target="_blank" rel="noreferrer"> <img src="media/hobbies/canada-1.jpg" width="auto" height="250"/> </a>
+<a href="media/hobbies/canada-2.jpeg" target="_blank" rel="noreferrer"> <img src="media/hobbies/canada-2.jpg" width="auto" height="250"/> </a>
 <a href="media/hobbies/canada-3.jpg" target="_blank" rel="noreferrer"> <img src="media/hobbies/canada-3.jpg" width="auto" height="250"/> </a> </p>
 
 ## United States of America
 <br>
 <p align="center"> 
 <a href="media/hobbies/florida.jpeg" target="_blank" rel="noreferrer"> <img src="media/hobbies/florida.jpeg" width="auto" height="250"/> </a>
-<a href="media/hobbies/ohio.jpeg" target="_blank" rel="noreferrer"> <img src="media/hobbies/ohio.jpeg" width="auto" height="250"/> </a>
+<a href="media/hobbies/ohio.jpeg" target="_blank" rel="noreferrer"> <img src="media/hobbies/ohio.jpg" width="auto" height="250"/> </a>
 <a href="media/hobbies/arizona.jpg" target="_blank" rel="noreferrer"> <img src="media/hobbies/arizona.jpg" width="auto" height="250"/> </a> </p>
 
 ## Singapore

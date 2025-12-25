@@ -11,7 +11,7 @@ I am a Ph.D. student and currently a Graduate Research/Teaching Associate in the
 
 My primary research interests include **Brain-Computer-Interface**, **Neuro AI**, **Audio and Speech Signal Processing**, **Speech Perception**, **AI for Healthcare**, and **Multimodal Learning**. <span class="blink">Please go through my [Resume] to get an overview.</span>
 
-[Research Statement]: /content/Hassan_Resume_Dec_25.pdf
+[Resume]: /content/Hassan_Resume_Dec_25.pdf
 [CSE-OSU]: https://cse.osu.edu/
 [OSU]: https://www.osu.edu/
 [EEE]: https://eee.buet.ac.bd/

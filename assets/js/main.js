@@ -72,14 +72,16 @@
 
   /* ---------- Experience & education ---------- */
   $("#exp-list").innerHTML = D.experience.map((e, i) => `
-    <div class="entry ${i === 0 ? "current" : ""}">
+    <div class="entry ${i === 0 ? "current" : ""} ${e.logo ? "has-logo" : ""}">
+      ${e.logo ? `<img class="logo" src="${e.logo}" alt="${e.org} logo" width="44" height="44">` : ""}
       <h4>${e.role}</h4>
       <p class="org">${e.org}</p>
       <p class="meta">${e.dates}, ${e.place}</p>
       <ul>${e.points.map(x => `<li>${x}</li>`).join("")}</ul>
     </div>`).join("");
   $("#edu-list").innerHTML = D.education.map((e, i) => `
-    <div class="entry ${i === 0 ? "current" : ""}">
+    <div class="entry ${i === 0 ? "current" : ""} ${e.logo ? "has-logo" : ""}">
+      ${e.logo ? `<img class="logo" src="${e.logo}" alt="${e.org} logo" width="44" height="44">` : ""}
       <h4>${e.degree}</h4>
       <p class="org">${e.org}</p>
       <p class="meta">${e.dates}</p>

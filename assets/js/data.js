@@ -267,6 +267,7 @@ window.SITE = {
     {
       role: "Graduate Research Associate",
       org: "The Ohio State University, ASPIRE Group",
+      logo: "assets/img/logos/osu.svg",
       place: "Columbus, Ohio",
       dates: "Aug 2023 – Present",
       points: [
@@ -278,6 +279,7 @@ window.SITE = {
     {
       role: "Research Assistant",
       org: "Bangladesh University of Engineering and Technology",
+      logo: "assets/img/logos/buet.png",
       place: "Dhaka, Bangladesh",
       dates: "Jul 2021 – Jul 2023",
       points: [
@@ -288,9 +290,9 @@ window.SITE = {
   ],
 
   education: [
-    { degree: "Ph.D., Computer Science and Engineering", org: "The Ohio State University", dates: "Aug 2023 – Present" },
-    { degree: "M.Sc., Electrical and Electronic Engineering", org: "Bangladesh University of Engineering and Technology", dates: "Jul 2021 – Jul 2023", note: "Thesis: Medical Sound Event Detection Using Audio Spectrogram Fourier Network" },
-    { degree: "B.Sc., Electrical and Electronic Engineering", org: "Bangladesh University of Engineering and Technology", dates: "Feb 2016 – Feb 2021" }
+    { degree: "Ph.D., Computer Science and Engineering", org: "The Ohio State University", logo: "assets/img/logos/osu.svg", dates: "Aug 2023 – Present" },
+    { degree: "M.Sc., Electrical and Electronic Engineering", org: "Bangladesh University of Engineering and Technology", logo: "assets/img/logos/buet.png", dates: "Jul 2021 – Jul 2023", note: "Thesis: Medical Sound Event Detection Using Audio Spectrogram Fourier Network" },
+    { degree: "B.Sc., Electrical and Electronic Engineering", org: "Bangladesh University of Engineering and Technology", logo: "assets/img/logos/buet.png", dates: "Feb 2016 – Feb 2021" }
   ],
 
   /* Newest first */

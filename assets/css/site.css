@@ -393,3 +393,13 @@ section.block.tinted .block-body { border-top: 0; padding-top: 0; }
   .block-head { margin-bottom: 18px; }
   .block-body { border-top: 0; padding-top: 0; }
 }
+
+/* Logos sit on the timeline in place of the dot */
+.entry.has-logo { padding-left: 46px; margin-left: 26px; }
+.entry.has-logo::before { display: none; }
+.entry .logo {
+  position: absolute; left: -27px; top: -4px; width: 52px; height: 52px;
+  object-fit: contain; background: var(--white); border-radius: 50%;
+  padding: 2px; border: 1px solid var(--line);
+}
+.entry.current .logo { border-color: var(--scarlet); box-shadow: 0 0 0 3px var(--scarlet-tint); }

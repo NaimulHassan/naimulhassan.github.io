@@ -14,7 +14,8 @@
     <a class="btn" href="${P.links.scholar}">${U.ICONS.cap}Google Scholar</a>
     <a class="btn" href="${P.links.github}">GitHub</a>
     <a class="btn" href="${P.links.linkedin}">LinkedIn</a>`;
-  U.drawSignal($("#signal-plot"), { seed: 11 });
+  window.drawTriad($("#signal-plot"));
+  let rw; addEventListener("resize", () => { clearTimeout(rw); rw = setTimeout(() => { const el = $("#signal-plot"); if ((el.clientWidth < 620) !== (el.querySelector("svg").viewBox.baseVal.width < 700)) window.drawTriad(el); }, 200); });
 
   /* ---------- News ---------- */
   const SHOW = 4;

@@ -125,7 +125,6 @@ a:hover { color: var(--scarlet-deep); }
 /* ---------- Signal strip (the one memorable element) ---------- */
 .signal { margin: clamp(44px, 6vw, 72px) 0 0; }
 .signal svg { width: 100%; height: auto; display: block; overflow: visible; }
-@media (max-width: 600px) { .signal svg { width: 180%; max-width: none; } .signal #signal-plot { overflow: hidden; } .signal .label { font-size: 20px; } }
 .signal .eeg { fill: none; stroke: var(--gray); stroke-width: 1.2; }
 .signal .speech { fill: none; stroke: var(--scarlet); stroke-width: 2.2; stroke-linejoin: round; }
 .signal .window { fill: var(--scarlet); fill-opacity: .08; }
@@ -357,3 +356,40 @@ footer a { color: var(--white); }
 .tldr { border-left-color: var(--teal); }
 .highlights li::before { background: var(--teal); }
 section.block.tinted .block-body { margin-left: 0; }
+
+/* Hero visual: brain, behavior, speech */
+.t-brain  { --tc: var(--indigo); }
+.t-beh    { --tc: var(--teal); }
+.t-speech { --tc: var(--scarlet); }
+.signal .icon { fill: none; stroke: var(--tc); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.signal .icon .fill { fill: var(--tc); }
+.signal .lbl { font: 600 16px var(--sans); fill: var(--ink); }
+.signal .lbl.center { text-anchor: middle; font-family: var(--serif); font-size: 19px; font-weight: 500; }
+.signal .sub { font: 400 13px var(--sans); fill: var(--slate); }
+.signal .trace { fill: none; stroke: var(--tc); stroke-width: 1.6; stroke-linejoin: round; }
+.t-speech .trace { stroke-width: 2.2; stroke-linecap: round; }
+.signal .join { fill: none; stroke: var(--tc); stroke-width: 1.4; stroke-opacity: .55; stroke-dasharray: var(--len); }
+.signal .node .ring { fill: var(--scarlet-tint); stroke: var(--scarlet); stroke-opacity: .35; }
+.signal .node .ring2 { fill: var(--white); stroke: var(--scarlet); stroke-width: 1.5; }
+.signal .node .core { fill: var(--scarlet); }
+.signal .draw.late { animation-delay: 1.6s; animation-duration: 1.1s; }
+.signal .fade-late { animation-delay: 2.4s; }
+
+.t-beh .trace { stroke-width: 1.2; stroke-opacity: .7; }
+.signal .fix { fill: var(--teal); fill-opacity: .18; stroke: var(--teal); stroke-width: 1.4; }
+.signal .fade-mid { opacity: 0; animation: fade .8s ease 1s forwards; }
+@media (prefers-reduced-motion: reduce) { .signal .fade-mid { animation: none; opacity: 1; } }
+
+/* Section layout: heading in the left column, content on the right */
+section.block > .wrap { display: grid; grid-template-columns: 220px minmax(0, 1fr); column-gap: 32px; }
+.block-head { display: block; margin: 0; }
+.block-head, .block-body { border-top: 1px solid var(--line); padding-top: 22px; }
+.block-body { margin-left: 0; }
+section.block.tinted > .wrap { display: block; }
+section.block.tinted .block-head { border-top: 0; padding-top: 0; margin-bottom: 26px; }
+section.block.tinted .block-body { border-top: 0; padding-top: 0; }
+@media (max-width: 860px) {
+  section.block > .wrap { display: block; }
+  .block-head { margin-bottom: 18px; }
+  .block-body { border-top: 0; padding-top: 0; }
+}

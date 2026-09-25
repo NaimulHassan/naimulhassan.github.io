@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="A speech waveform traced back to one of several sources">
+  <rect width="120" height="120" fill="#FBEDEF"/>
+  <g stroke="#BA0C2F" stroke-width="3.2" stroke-linecap="round">
+    <path d="M14 60v0M21 52v16M28 44v32M35 54v12M42 36v48M49 48v24M56 56v8"/>
+  </g>
+  <path d="M60 60h10" stroke="#5B656C" stroke-width="2.4" stroke-linecap="round"/>
+  <g fill="none" stroke="#5B656C" stroke-width="2.4" stroke-linecap="round">
+    <path d="M70 60C76 60 76 32 84 32M70 60C76 60 76 88 84 88M70 60h14"/>
+  </g>
+  <rect x="84" y="24" width="22" height="16" rx="4" fill="#fff" stroke="#A7B1B7" stroke-width="2"/>
+  <rect x="84" y="52" width="22" height="16" rx="4" fill="#BA0C2F"/>
+  <rect x="84" y="80" width="22" height="16" rx="4" fill="#fff" stroke="#A7B1B7" stroke-width="2"/>
+  <path d="M90 60l3 3 6-6" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

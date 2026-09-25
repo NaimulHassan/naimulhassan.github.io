@@ -293,13 +293,14 @@ window.SITE = {
     { degree: "B.Sc., Electrical and Electronic Engineering", org: "Bangladesh University of Engineering and Technology", dates: "Feb 2016 – Feb 2021" }
   ],
 
+  /* Newest first */
   projects: [
-    { title: "Refreshable Braille Display", venue: "IEEE YESIST12 2019", result: "National champion, world finalist", text: "A portable device that reads text and detects objects for visually impaired users, with output on a Braille display.", img: "assets/img/papers/braille.webp", paper: "braille" },
+    { title: "Social Conversational Agent", venue: "Amazon Alexa Prize SocialBot Grand Challenge 2022", text: "Designed a chatbot for open-ended conversation, with modules for understanding intent, managing dialog, and generating responses.", img: "assets/img/projects/chatbot.svg" },
+    { title: "Synthetic Speech Attribution", venue: "IEEE SP Cup 2022", result: "Team mentor", text: "Mentored a team building a model that identifies which speech-synthesis system generated an audio clip.", img: "assets/img/projects/synthetic-speech.svg" },
+    { title: "Anomaly Detection in Autonomous Systems", venue: "IEEE SP Cup 2020", result: "Second runner-up", text: "Flagged abnormal behavior from motion-sensor and video data without labeled examples, using autoencoders.", img: "assets/img/projects/anomaly-drone.webp", report: "content/papers/sp2020.pdf" },
+    { title: "Privacy-Protected Activity Recognition", venue: "IEEE VIP Cup 2019", result: "First runner-up", text: "Recognized office activities from body-camera video while blurring sensitive objects.", img: "assets/img/projects/activity-bodycam.webp", report: "content/papers/vip2019.pdf" },
     { title: "Drone-Based Sound Source Localization", venue: "IEEE SP Cup 2019", result: "World rank 10", text: "Estimated the direction of a sound source from a drone's microphone array in noise, for search and rescue.", img: "assets/img/papers/doanet.webp", paper: "doanet" },
-    { title: "Anomaly Detection in Autonomous Systems", venue: "IEEE SP Cup 2020", result: "Second runner-up", text: "Flagged abnormal behavior from motion-sensor and video data without labeled examples, using autoencoders.", report: "content/papers/sp2020.pdf" },
-    { title: "Privacy-Protected Activity Recognition", venue: "IEEE VIP Cup 2019", result: "First runner-up", text: "Recognized office activities from body-camera video while blurring sensitive objects.", report: "content/papers/vip2019.pdf" },
-    { title: "Social Conversational Agent", venue: "Amazon Alexa Prize SocialBot Grand Challenge 2022", text: "Designed a chatbot for open-ended conversation, with modules for understanding intent, managing dialog, and generating responses." },
-    { title: "Synthetic Speech Attribution", venue: "IEEE SP Cup 2022", result: "Team mentor", text: "Mentored a team building a model that identifies which speech-synthesis system generated an audio clip." }
+    { title: "Refreshable Braille Display", venue: "IEEE YESIST12 2019", result: "National champion, world finalist", text: "A portable device that reads text and detects objects for visually impaired users, with output on a Braille display.", img: "assets/img/papers/braille.webp", paper: "braille" }
   ],
 
   awards: [

@@ -22,7 +22,7 @@
   $("#news-list").innerHTML = D.news.map((n, i) => `
     <li class="${i >= SHOW ? "hidden" : ""}">
       <time>${n.date}</time>
-      <div>${n.type ? `<span class="kind k-${n.type.toLowerCase()}">${n.type}</span>` : ""}${n.html}${n.paper ? ` <a href="paper.html?id=${n.paper}">Read more</a>` : ""}</div>
+      <div>${(n.tags || []).map(t => `<span class="kind k-${t.toLowerCase()}">${t}</span>`).join("")}${n.html}${n.paper ? ` <a href="paper.html?id=${n.paper}">${n.linkText || "Read more"}</a>` : ""}</div>
     </li>`).join("");
   const moreBtn = $("#news-more");
   if (D.news.length > SHOW) {

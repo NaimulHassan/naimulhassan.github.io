@@ -51,7 +51,7 @@
       <h2>Citation</h2>
       ${p.bibtex
         ? `<div class="bib"><pre id="bib">${p.bibtex}</pre><button class="btn" id="copy">${U.ICONS.copy}Copy</button></div>`
-        : `<p>BibTeX will be added once the paper is published. Until then, please cite the dataset and code repository.</p>`}
+        : `<p>BibTeX will be added once the paper is published. </p>`}
     </section>`;
 
   const copy = document.getElementById("copy");

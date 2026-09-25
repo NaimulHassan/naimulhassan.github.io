@@ -22,13 +22,16 @@ window.SITE = {
     }
   },
 
+  /* Newest first. tags: Submitted, Accepted, Published, Dataset, Award, Milestone */
   news: [
-    { date: "Jun 2026", html: "<b>SCANS</b> was accepted to <i>Interspeech 2026</i>.", paper: "scans", type: "Paper" },
-    { date: "May 2026", html: "Submitted <b>MAESTRO</b> to <i>IEEE TASLP</i> and released the dataset on Hugging Face.", paper: "maestro", type: "Dataset" },
-    { date: "Apr 2025", html: "Received the <b>CCBS Summer Graduate Research Award</b> from OSU's Center for Cognitive and Brain Sciences.", type: "Award" },
-    { date: "Nov 2024", html: "Received the <b>IEEE Signal Processing Society Scholarship</b>.", type: "Award" },
-    { date: "Aug 2023", html: "Started my Ph.D. in Computer Science and Engineering at <b>The Ohio State University</b>.", type: "Milestone" },
-    { date: "Jul 2023", html: "Defended my M.Sc. thesis on medical sound event detection at BUET and posted <b>ASFNet</b> on TechRxiv.", paper: "asfnet", type: "Milestone" }
+    { date: "Sep 2026", html: "Submitted <b>MAESTRO</b> to <i>IEEE TASLP</i> and released the dataset on Hugging Face.", tags: ["Submitted", "Dataset"] },
+    { date: "Sep 2026", html: "<b>SCANS</b> was published in the proceedings of <i>Interspeech 2026</i>.", tags: ["Published"], paper: "scans", linkText: "Project page" },
+    { date: "Jun 2026", html: "<b>SCANS</b> was accepted to <i>Interspeech 2026</i>.", tags: ["Accepted"] },
+    { date: "Mar 2026", html: "Submitted <b>SCANS</b> to <i>Interspeech 2026</i>.", tags: ["Submitted"] },
+    { date: "Apr 2025", html: "Received the <b>CCBS Summer Graduate Research Award</b> from OSU's Center for Cognitive and Brain Sciences.", tags: ["Award"] },
+    { date: "Nov 2024", html: "Received the <b>IEEE Signal Processing Society Scholarship</b>.", tags: ["Award"] },
+    { date: "Aug 2023", html: "Started my Ph.D. in Computer Science and Engineering at <b>The Ohio State University</b>.", tags: ["Milestone"] },
+    { date: "Jul 2023", html: "Defended my M.Sc. thesis on medical sound event detection at BUET and posted <b>ASFNet</b> on TechRxiv.", paper: "asfnet", tags: ["Milestone"] }
   ],
 
   /* Current research threads shown near the top of the page */
@@ -90,15 +93,14 @@ window.SITE = {
       title: "MAESTRO: A Multimodal Auditory-attention Egocentric Speech-TRacking Open corpus",
       authors: ["K M Naimul Hassan*", "Ali Alavi*", "Donald S. Williamson"],
       authorNote: "* Equal contribution",
-      venue: "Under review, IEEE TASLP",
-      venueLong: "Under review at IEEE Transactions on Audio, Speech, and Language Processing",
+      venue: "IEEE TASLP",
+      venueLong: "IEEE Transactions on Audio, Speech, and Language Processing",
       status: "Under review",
       year: 2026,
       thumb: "assets/img/papers/maestro_thumb.webp",
-      links: {
-        dataset: "https://huggingface.co/datasets/aspireosu/maestro-eeg-dataset",
-        code: "https://github.com/ASPIRE-OSU/MAESTRO"
-      },
+      /* Add the Hugging Face dataset and code links here once confirmed:
+         links: { dataset: "https://huggingface.co/datasets/...", code: "https://github.com/..." } */
+      links: {},
       tldr: "The first auditory attention dataset that records EEG together with gaze, pupil size, egocentric video, and head motion. Adding these behavioral signals to EEG improves attention decoding for almost every listener.",
       abstract: "Humans rely on gaze, head movements, and visual cues to attend to speakers in noisy environments, yet auditory attention decoding (AAD) has been studied primarily using electroencephalography (EEG). We introduce the Multimodal Auditory-attention Ego-centric Speech-TRacking Open (MAESTRO) corpus, the first AAD dataset to simultaneously record EEG, eye gaze, pupillometry, egocentric video, and head inertial measurement unit (IMU) data. MAESTRO includes four competing speakers and background noise across multiple signal-to-noise ratio (SNR) conditions, enabling attention decoding under realistic listening scenarios. Through a four-speaker attention decoding benchmark, we show that combining behavioral and physiological signals improves decoding performance over EEG-only approaches, enabling future advances in multimodal auditory attention decoding.",
       highlights: [
@@ -193,8 +195,8 @@ window.SITE = {
       group: "audio",
       title: "ASFNet: Audio Spectrogram Fourier Network for Efficient Medical Sound Event Detection",
       authors: ["K M Naimul Hassan", "Mohammad Ariful Haque"],
-      venue: "Preprint, TechRxiv 2023",
-      venueLong: "Preprint, TechRxiv, 2023",
+      venue: "TechRxiv 2023",
+      venueLong: "TechRxiv, 2023",
       status: "Preprint",
       year: 2023,
       thumb: "assets/img/papers/asfnet_thumb.webp",

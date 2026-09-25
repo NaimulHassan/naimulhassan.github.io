@@ -403,3 +403,22 @@ section.block.tinted .block-body { border-top: 0; padding-top: 0; }
   padding: 2px; border: 1px solid var(--line);
 }
 .entry.current .logo { border-color: var(--scarlet); box-shadow: 0 0 0 3px var(--scarlet-tint); }
+
+/* News tags */
+.kind { margin-right: 6px; }
+.k-submitted { background: var(--white); color: var(--slate); border: 1px solid var(--gray); }
+.k-accepted { background: var(--scarlet-tint); color: var(--scarlet-deep); }
+.k-published { background: var(--teal-tint); color: var(--teal); }
+.k-dataset { background: var(--indigo-tint); color: var(--indigo); }
+.k-award { background: var(--gold-tint); color: #8A5E00; }
+.k-milestone { background: var(--mist); color: var(--slate); border: 1px solid var(--line); }
+.news li > div { line-height: 1.7; }
+
+/* Venues stand out in the publication list */
+.venue-line .venue {
+  font-style: normal; font-weight: 700; font-size: 14.5px; letter-spacing: .01em;
+  color: var(--accent, var(--scarlet)); background: var(--accent-tint, var(--scarlet-tint));
+  padding: 3px 10px; border-radius: 6px;
+}
+.paper-hero .venue-line .venue { font-size: 15.5px; color: var(--scarlet-deep); background: var(--scarlet-tint); }
+.news a { white-space: nowrap; }

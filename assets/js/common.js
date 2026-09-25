@@ -25,6 +25,12 @@
     return `<span class="tag ${cls}">${status}</span>`;
   }
 
+  // Conference and journal names are highlighted; preprints stay plain
+  function venue(p, long) {
+    const text = long ? (p.venueLong || p.venue) : p.venue;
+    return p.status === "Preprint" ? `<span class="venue">${text}</span>` : `<span class="venue hl">${text}</span>`;
+  }
+
   function linkButtons(p, opts = {}) {
     const L = p.links || {};
     const out = [];
@@ -117,5 +123,5 @@
     if (yr) yr.textContent = new Date().getFullYear();
   }
 
-  window.UI = { ICONS, authors, statusTag, linkButtons, drawSignal, initChrome };
+  window.UI = { ICONS, authors, statusTag, venue, linkButtons, drawSignal, initChrome };
 })();

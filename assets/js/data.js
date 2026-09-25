@@ -24,32 +24,35 @@ window.SITE = {
 
   /* Newest first. tags: Submitted, Accepted, Published, Dataset, Award, Milestone */
   news: [
-    { date: "Sep 2026", html: "Submitted <b>MAESTRO</b> to <i>IEEE TASLP</i> and released the dataset on Hugging Face.", tags: ["Submitted", "Dataset"] },
-    { date: "Sep 2026", html: "<b>SCANS</b> was published in the proceedings of <i>Interspeech 2026</i>.", tags: ["Published"], paper: "scans", linkText: "Project page" },
-    { date: "Jun 2026", html: "<b>SCANS</b> was accepted to <i>Interspeech 2026</i>.", tags: ["Accepted"] },
-    { date: "Mar 2026", html: "Submitted <b>SCANS</b> to <i>Interspeech 2026</i>.", tags: ["Submitted"] },
-    { date: "Apr 2025", html: "Received the <b>CCBS Summer Graduate Research Award</b> from OSU's Center for Cognitive and Brain Sciences.", tags: ["Award"] },
-    { date: "Nov 2024", html: "Received the <b>IEEE Signal Processing Society Scholarship</b>.", tags: ["Award"] },
-    { date: "Aug 2023", html: "Started my Ph.D. in Computer Science and Engineering at <b>The Ohio State University</b>.", tags: ["Milestone"] },
-    { date: "Jul 2023", html: "Defended my M.Sc. thesis on medical sound event detection at BUET and posted <b>ASFNet</b> on TechRxiv.", paper: "asfnet", tags: ["Milestone"] }
+    { date: "Sep 2026", tags: ["Submitted", "Dataset"], html: "Submitted <b>MAESTRO</b> to <i>IEEE TASLP</i> and released the dataset on Hugging Face." },
+    { date: "Sep 2026", tags: ["Published"], html: "<b>SCANS</b> was published in the <i>Interspeech 2026</i> proceedings.", paper: "scans", linkText: "Project page" },
+    { date: "Jun 2026", tags: ["Accepted"], html: "<b>SCANS</b> was accepted to <i>Interspeech 2026</i>." },
+    { date: "Mar 2026", tags: ["Submitted"], html: "Submitted <b>SCANS</b> to <i>Interspeech 2026</i>." },
+    { date: "Apr 2025", tags: ["Award"], html: "Received the <b>CCBS Summer Graduate Research Award</b> from OSU's Center for Cognitive and Brain Sciences." },
+    { date: "Nov 2024", tags: ["Award"], html: "Received the <b>IEEE Signal Processing Society Scholarship</b>." },
+    { date: "Aug 2023", tags: ["Milestone"], html: "Started my Ph.D. in Computer Science and Engineering at <b>The Ohio State University</b>." },
+    { date: "Jul 2023", tags: ["Milestone"], html: "Defended my M.Sc. thesis on medical sound event detection at BUET and posted <b>ASFNet</b> on TechRxiv.", paper: "asfnet", linkText: "Project page" }
   ],
 
   /* Current research threads shown near the top of the page */
   research: [
     {
       title: "Aligning EEG with speech",
+      art: "align",
       color: "scarlet",
       text: "Which part of a sentence is the brain responding to right now? SCANS learns a shared space for EEG and speech and sets a new state of the art on the ICASSP 2024 EEG decoding benchmark.",
       paper: "scans"
     },
     {
       title: "Sensing attention beyond EEG",
+      art: "sense",
       color: "teal",
       text: "Listeners look and turn toward the voice they follow. MAESTRO records EEG together with gaze, egocentric video, and head motion, and shows these signals make attention decoding more accurate.",
       paper: "maestro"
     },
     {
       title: "Decoding that knows when it's unsure",
+      art: "decide",
       color: "indigo",
       text: "A belief-state reinforcement learning agent that decodes attention from EEG in real time and tracks its own uncertainty, aimed at neuro-steered hearing aids."
     }
@@ -98,9 +101,9 @@ window.SITE = {
       status: "Under review",
       year: 2026,
       thumb: "assets/img/papers/maestro_thumb.webp",
-      /* Add the Hugging Face dataset and code links here once confirmed:
-         links: { dataset: "https://huggingface.co/datasets/...", code: "https://github.com/..." } */
-      links: {},
+      links: {
+        dataset: "https://huggingface.co/datasets/aspire-osu/maestro-eeg-dataset"
+      },
       tldr: "The first auditory attention dataset that records EEG together with gaze, pupil size, egocentric video, and head motion. Adding these behavioral signals to EEG improves attention decoding for almost every listener.",
       abstract: "Humans rely on gaze, head movements, and visual cues to attend to speakers in noisy environments, yet auditory attention decoding (AAD) has been studied primarily using electroencephalography (EEG). We introduce the Multimodal Auditory-attention Ego-centric Speech-TRacking Open (MAESTRO) corpus, the first AAD dataset to simultaneously record EEG, eye gaze, pupillometry, egocentric video, and head inertial measurement unit (IMU) data. MAESTRO includes four competing speakers and background noise across multiple signal-to-noise ratio (SNR) conditions, enabling attention decoding under realistic listening scenarios. Through a four-speaker attention decoding benchmark, we show that combining behavioral and physiological signals improves decoding performance over EEG-only approaches, enabling future advances in multimodal auditory attention decoding.",
       highlights: [

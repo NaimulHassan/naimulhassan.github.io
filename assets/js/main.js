@@ -22,7 +22,7 @@
   $("#news-list").innerHTML = D.news.map((n, i) => `
     <li class="${i >= SHOW ? "hidden" : ""}">
       <time>${n.date}</time>
-      <div>${(n.tags || []).map(t => `<span class="kind k-${t.toLowerCase()}">${t}</span>`).join("")}${n.html}${n.paper ? ` <a href="paper.html?id=${n.paper}">${n.linkText || "Read more"}</a>` : ""}</div>
+      <div>${(n.tags || []).map(t => `<span class="kind k-${t.toLowerCase()}">${t}</span>`).join("")}${n.html}${n.link ? ` <a href="${n.link.href}">${n.link.text}</a>` : n.paper ? ` <a href="paper.html?id=${n.paper}">${n.linkText || "Read more"}</a>` : ""}</div>
     </li>`).join("");
   const moreBtn = $("#news-more");
   if (D.news.length > SHOW) {
@@ -39,6 +39,7 @@
   /* ---------- Research threads ---------- */
   $("#threads").innerHTML = D.research.map(r => `
     <div class="thread c-${r.color || "scarlet"}">
+      ${r.art && window.researchArt ? `<div class="thread-art-wrap">${window.researchArt(r.art)}</div>` : ""}
       <h3>${r.title}</h3>
       <p>${r.text}</p>
       ${r.paper ? `<a href="paper.html?id=${r.paper}">See the project</a>` : `<span class="ongoing">In progress</span>`}
@@ -54,7 +55,7 @@
         <div>
           <h4><a href="paper.html?id=${p.id}">${p.title}</a></h4>
           <p class="authors">${U.authors(p.authors)}</p>
-          <p class="venue-line"><span class="venue">${p.venue}</span>${U.statusTag(p.status)}</p>
+          <p class="venue-line">${U.venue(p)}${U.statusTag(p.status)}</p>
           <div class="actions">
             ${U.linkButtons(p, { project: true })}
             <button class="btn abstract-toggle" aria-expanded="false" aria-controls="abs-${p.id}">Abstract ${U.ICONS.chevron}</button>

@@ -23,7 +23,7 @@
       <h1>${p.title}</h1>
       <p class="authors">${U.authors(p.authors)}</p>
       ${p.authorNote ? `<p class="note">${p.authorNote}</p>` : ""}
-      <p class="venue-line"><span class="venue">${p.venueLong || p.venue}</span>${U.statusTag(p.status)}</p>
+      <p class="venue-line">${U.venue(p, true)}${U.statusTag(p.status)}</p>
       <div class="links">${U.linkButtons(p)}</div>
       ${p.tldr ? `<p class="tldr">${p.tldr}</p>` : ""}
     </div>

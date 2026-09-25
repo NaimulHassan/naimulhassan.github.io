@@ -415,10 +415,24 @@ section.block.tinted .block-body { border-top: 0; padding-top: 0; }
 .news li > div { line-height: 1.7; }
 
 /* Venues stand out in the publication list */
-.venue-line .venue {
+.venue-line .venue.hl {
   font-style: normal; font-weight: 700; font-size: 14.5px; letter-spacing: .01em;
   color: var(--accent, var(--scarlet)); background: var(--accent-tint, var(--scarlet-tint));
   padding: 3px 10px; border-radius: 6px;
 }
-.paper-hero .venue-line .venue { font-size: 15.5px; color: var(--scarlet-deep); background: var(--scarlet-tint); }
+.paper-hero .venue-line .venue.hl { font-size: 15.5px; color: var(--scarlet-deep); background: var(--scarlet-tint); }
 .news a { white-space: nowrap; }
+
+/* News tags */
+.kind { margin-right: 6px; }
+.k-published { background: var(--scarlet-tint); color: var(--scarlet-deep); }
+.k-accepted  { background: var(--teal-tint); color: var(--teal); }
+.k-submitted { background: var(--white); color: var(--slate); box-shadow: inset 0 0 0 1px var(--gray); }
+.k-dataset   { background: var(--indigo-tint); color: var(--indigo); }
+.k-award     { background: var(--gold-tint); color: #8A5E00; }
+.k-milestone { background: var(--mist); color: var(--slate); box-shadow: inset 0 0 0 1px var(--line); }
+
+/* Research thread illustrations */
+.thread-art-wrap { background: var(--accent-tint); border-radius: 8px; margin: -4px -4px 18px; padding: 8px 6px; }
+.thread-art { width: 100%; height: auto; display: block; }
+.thread-art .art-lbl { font: 500 11px var(--sans); fill: var(--slate); }

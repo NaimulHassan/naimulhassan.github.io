@@ -23,36 +23,39 @@ window.SITE = {
   },
 
   news: [
-    { date: "Jun 2026", html: "<b>SCANS</b> was accepted to <i>Interspeech 2026</i>.", paper: "scans" },
-    { date: "May 2026", html: "Submitted <b>MAESTRO</b> to <i>IEEE TASLP</i> and released the dataset on Hugging Face.", paper: "maestro" },
-    { date: "Apr 2025", html: "Received the <b>CCBS Summer Graduate Research Award</b> from OSU's Center for Cognitive and Brain Sciences." },
-    { date: "Nov 2024", html: "Received the <b>IEEE Signal Processing Society Scholarship</b>." },
-    { date: "Aug 2023", html: "Started my Ph.D. in Computer Science and Engineering at <b>The Ohio State University</b>." },
-    { date: "Jul 2023", html: "Defended my M.Sc. thesis on medical sound event detection at BUET and posted <b>ASFNet</b> on TechRxiv.", paper: "asfnet" }
+    { date: "Jun 2026", html: "<b>SCANS</b> was accepted to <i>Interspeech 2026</i>.", paper: "scans", type: "Paper" },
+    { date: "May 2026", html: "Submitted <b>MAESTRO</b> to <i>IEEE TASLP</i> and released the dataset on Hugging Face.", paper: "maestro", type: "Dataset" },
+    { date: "Apr 2025", html: "Received the <b>CCBS Summer Graduate Research Award</b> from OSU's Center for Cognitive and Brain Sciences.", type: "Award" },
+    { date: "Nov 2024", html: "Received the <b>IEEE Signal Processing Society Scholarship</b>.", type: "Award" },
+    { date: "Aug 2023", html: "Started my Ph.D. in Computer Science and Engineering at <b>The Ohio State University</b>.", type: "Milestone" },
+    { date: "Jul 2023", html: "Defended my M.Sc. thesis on medical sound event detection at BUET and posted <b>ASFNet</b> on TechRxiv.", paper: "asfnet", type: "Milestone" }
   ],
 
   /* Current research threads shown near the top of the page */
   research: [
     {
       title: "Aligning EEG with speech",
+      color: "scarlet",
       text: "Which part of a sentence is the brain responding to right now? SCANS learns a shared space for EEG and speech and sets a new state of the art on the ICASSP 2024 EEG decoding benchmark.",
       paper: "scans"
     },
     {
       title: "Sensing attention beyond EEG",
+      color: "teal",
       text: "Listeners look and turn toward the voice they follow. MAESTRO records EEG together with gaze, egocentric video, and head motion, and shows these signals make attention decoding more accurate.",
       paper: "maestro"
     },
     {
       title: "Decoding that knows when it's unsure",
+      color: "indigo",
       text: "A belief-state reinforcement learning agent that decodes attention from EEG in real time and tracks its own uncertainty, aimed at neuro-steered hearing aids."
     }
   ],
 
   publicationGroups: [
-    { id: "neuro", label: "Neural decoding and brain-computer interfaces" },
-    { id: "health", label: "AI for healthcare and accessibility" },
-    { id: "audio", label: "Audio and speech processing" }
+    { id: "neuro", label: "Neural decoding and brain-computer interfaces", color: "scarlet" },
+    { id: "health", label: "AI for healthcare and accessibility", color: "teal" },
+    { id: "audio", label: "Audio and speech processing", color: "indigo" }
   ],
 
   publications: [

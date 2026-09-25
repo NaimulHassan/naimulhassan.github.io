@@ -276,3 +276,84 @@ footer .wrap { display: flex; justify-content: space-between; flex-wrap: wrap; g
 .bib pre { margin: 0; background: var(--mist); border: 1px solid var(--line); border-radius: var(--radius); padding: 18px 20px; overflow-x: auto; font-size: 13.5px; line-height: 1.55; }
 .bib .btn { position: absolute; top: 10px; right: 10px; padding: 6px 11px; font-size: 13px; }
 .not-found { padding: 80px 0; }
+
+/* ============================================================
+   Color layer: OSU scarlet leads; teal, indigo, and gold mark
+   research areas, paper status, and results.
+   ============================================================ */
+:root {
+  --teal: #0F7C80;   --teal-tint: #E3F2F2;
+  --indigo: #4B4FA6; --indigo-tint: #ECEDF8;
+  --gold: #C98A00;   --gold-tint: #FFF3D1;
+}
+.c-scarlet { --accent: var(--scarlet); --accent-tint: var(--scarlet-tint); }
+.c-teal    { --accent: var(--teal);    --accent-tint: var(--teal-tint); }
+.c-indigo  { --accent: var(--indigo);  --accent-tint: var(--indigo-tint); }
+
+/* Hero sits on faint graph paper, like an EEG recording sheet */
+.hero {
+  background:
+    linear-gradient(to bottom, rgba(255,255,255,0) 60%, var(--white) 100%),
+    repeating-linear-gradient(0deg, rgba(167,177,183,.16) 0 1px, transparent 1px 28px),
+    repeating-linear-gradient(90deg, rgba(167,177,183,.16) 0 1px, transparent 1px 28px),
+    #FAFBFB;
+  padding-bottom: 8px;
+}
+.hero .seeking { background: var(--white); border-left-color: var(--teal); box-shadow: 0 1px 0 var(--line); }
+.hero h1 { color: var(--ink); }
+
+/* Signal strip: channels in grey, teal, and indigo */
+.signal .eeg.ch0 { stroke: var(--gray); }
+.signal .eeg.ch1 { stroke: var(--teal); stroke-opacity: .55; }
+.signal .eeg.ch2 { stroke: var(--indigo); stroke-opacity: .5; }
+
+/* Tinted sections */
+section.block.tinted { background: var(--mist); margin-top: clamp(56px, 8vw, 96px); padding: clamp(40px, 6vw, 64px) 0; }
+section.block.tinted .block-head { border-top-color: transparent; padding-top: 0; }
+section.block.tinted + section.block { padding-top: clamp(40px, 6vw, 64px); }
+
+/* News: kind chips */
+.kind { display: inline-block; font-size: 12px; font-weight: 600; padding: 1px 8px; border-radius: 999px; margin-right: 8px; vertical-align: 2px; }
+.k-paper { background: var(--scarlet-tint); color: var(--scarlet-deep); }
+.k-dataset { background: var(--teal-tint); color: var(--teal); }
+.k-award { background: var(--gold-tint); color: #8A5E00; }
+.k-milestone { background: var(--indigo-tint); color: var(--indigo); }
+
+/* Research threads as colored panels */
+.thread { background: var(--white); border-radius: 12px; padding: 22px 22px 20px; border-top: 4px solid var(--accent); }
+.thread h3 { color: var(--ink); }
+.thread a { color: var(--accent); }
+.thread .ongoing { color: var(--accent); border-color: var(--accent); background: var(--accent-tint); }
+
+/* Publication groups: color keyed to research area */
+.pub-group > h3 { display: flex; align-items: center; gap: 10px; color: var(--ink); font-size: 16px; }
+.pub-group .dot { width: 12px; height: 12px; border-radius: 3px; background: var(--accent); flex: none; }
+.pub .thumb { border-left: 4px solid var(--accent); }
+.pub .thumb:hover { border-color: var(--accent); }
+.pub h4 a:hover { color: var(--accent); }
+
+/* Status tags carry their own colors */
+.tag.published { background: var(--teal-tint); color: var(--teal); }
+.tag.review { background: var(--gold-tint); color: #8A5E00; border: 0; }
+.tag.preprint { background: var(--indigo-tint); color: var(--indigo); border: 0; }
+
+/* Timeline: current roles in scarlet, past in teal */
+.entry::before { border-color: var(--teal); }
+
+/* Projects: results in gold-brown, images framed */
+.project { border-top-color: #E3E7EA; }
+.project .meta .result { color: #8A5E00; background: var(--gold-tint); padding: 0 6px; border-radius: 4px; }
+
+/* Awards: medal marker */
+.awards li { grid-template-columns: 14px minmax(0, 1fr) auto; align-items: start; }
+.awards li::before { content: ""; width: 10px; height: 10px; margin-top: 8px; border-radius: 50%; background: var(--gold); box-shadow: 0 0 0 3px var(--gold-tint); }
+
+/* Contact and footer: a scarlet close */
+.contact .mail { color: var(--scarlet); }
+footer { background: var(--scarlet); color: rgba(255,255,255,.9); border-top: 0; margin-top: clamp(64px, 9vw, 110px); }
+footer a { color: var(--white); }
+
+/* Project pages pick up the same accents */
+.tldr { border-left-color: var(--teal); }
+.highlights li::before { background: var(--teal); }
+section.block.tinted .block-body { margin-left: 0; }

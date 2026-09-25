@@ -68,7 +68,7 @@
         const v = .35 * Math.sin(i * f + ph) + .45 * (rand() - .5) + tracked - w * .3;
         d += `${i ? "L" : "M"}${(i * dx).toFixed(1)} ${(y0 - v * rowH * .55).toFixed(1)}`;
       }
-      eeg += `<path class="eeg draw" d="${d}"/>`;
+      eeg += `<path class="eeg draw ch${c % 3}" d="${d}"/>`;
     }
 
     // Highlight window around one burst in the middle

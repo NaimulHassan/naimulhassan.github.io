@@ -21,7 +21,7 @@
   $("#news-list").innerHTML = D.news.map((n, i) => `
     <li class="${i >= SHOW ? "hidden" : ""}">
       <time>${n.date}</time>
-      <div>${n.html}${n.paper ? ` <a href="paper.html?id=${n.paper}">Read more</a>` : ""}</div>
+      <div>${n.type ? `<span class="kind k-${n.type.toLowerCase()}">${n.type}</span>` : ""}${n.html}${n.paper ? ` <a href="paper.html?id=${n.paper}">Read more</a>` : ""}</div>
     </li>`).join("");
   const moreBtn = $("#news-more");
   if (D.news.length > SHOW) {
@@ -37,7 +37,7 @@
 
   /* ---------- Research threads ---------- */
   $("#threads").innerHTML = D.research.map(r => `
-    <div class="thread">
+    <div class="thread c-${r.color || "scarlet"}">
       <h3>${r.title}</h3>
       <p>${r.text}</p>
       ${r.paper ? `<a href="paper.html?id=${r.paper}">See the project</a>` : `<span class="ongoing">In progress</span>`}
@@ -47,7 +47,7 @@
   $("#pubs").innerHTML = D.publicationGroups.map(g => {
     const items = D.publications.filter(p => p.group === g.id);
     if (!items.length) return "";
-    return `<div class="pub-group"><h3>${g.label}</h3>${items.map(p => `
+    return `<div class="pub-group c-${g.color || "scarlet"}"><h3><span class="dot"></span>${g.label}</h3>${items.map(p => `
       <article class="pub" id="pub-${p.id}">
         <a class="thumb" href="paper.html?id=${p.id}" aria-label="Project page for ${p.title}"><img src="${p.thumb}" alt="" loading="lazy"></a>
         <div>

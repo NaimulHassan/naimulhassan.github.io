@@ -24,7 +24,7 @@ window.SITE = {
 
   /* Newest first. tags: Submitted, Accepted, Published, Dataset, Award, Milestone */
   news: [
-    { date: "Sep 2026", tags: ["Submitted", "Dataset"], html: "Submitted <b>MAESTRO</b> to <i>IEEE TASLP</i> and released the dataset on Hugging Face." },
+    { date: "Sep 2026", tags: ["Submitted", "Dataset"], html: "Submitted <b>MAESTRO</b> to <i>IEEE TASLP</i> and released the dataset on Hugging Face.", paper: "maestro" },
     { date: "Sep 2026", tags: ["Published"], html: "<b>SCANS</b> was published in the <i>Interspeech 2026</i> proceedings.", paper: "scans" },
     { date: "Jun 2026", tags: ["Accepted"], html: "<b>SCANS</b> was accepted to <i>Interspeech 2026</i>." },
     { date: "Mar 2026", tags: ["Submitted"], html: "Submitted <b>SCANS</b> to <i>Interspeech 2026</i>." },

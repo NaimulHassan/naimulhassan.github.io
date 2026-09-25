@@ -25,13 +25,13 @@ window.SITE = {
   /* Newest first. tags: Submitted, Accepted, Published, Dataset, Award, Milestone */
   news: [
     { date: "Sep 2026", tags: ["Submitted", "Dataset"], html: "Submitted <b>MAESTRO</b> to <i>IEEE TASLP</i> and released the dataset on Hugging Face." },
-    { date: "Sep 2026", tags: ["Published"], html: "<b>SCANS</b> was published in the <i>Interspeech 2026</i> proceedings.", paper: "scans", linkText: "Project page" },
+    { date: "Sep 2026", tags: ["Published"], html: "<b>SCANS</b> was published in the <i>Interspeech 2026</i> proceedings.", paper: "scans" },
     { date: "Jun 2026", tags: ["Accepted"], html: "<b>SCANS</b> was accepted to <i>Interspeech 2026</i>." },
     { date: "Mar 2026", tags: ["Submitted"], html: "Submitted <b>SCANS</b> to <i>Interspeech 2026</i>." },
     { date: "Apr 2025", tags: ["Award"], html: "Received the <b>CCBS Summer Graduate Research Award</b> from OSU's Center for Cognitive and Brain Sciences." },
     { date: "Nov 2024", tags: ["Award"], html: "Received the <b>IEEE Signal Processing Society Scholarship</b>." },
     { date: "Aug 2023", tags: ["Milestone"], html: "Started my Ph.D. in Computer Science and Engineering at <b>The Ohio State University</b>." },
-    { date: "Jul 2023", tags: ["Milestone"], html: "Defended my M.Sc. thesis on medical sound event detection at BUET and posted <b>ASFNet</b> on TechRxiv.", paper: "asfnet", linkText: "Project page" }
+    { date: "Jul 2023", tags: ["Milestone"], html: "Defended my M.Sc. thesis on medical sound event detection at BUET and posted <b>ASFNet</b> on TechRxiv.", paper: "asfnet" }
   ],
 
   /* Current research threads shown near the top of the page */

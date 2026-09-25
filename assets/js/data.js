@@ -14,7 +14,7 @@ window.SITE = {
     ],
     seeking: "Looking for research internships in brain-computer interfaces, neural data science, and applied machine learning.",
     email: "hassan.491@osu.edu",
-    cv: "content/Hassan_Resume_26.pdf",
+    cv: "content/Hassan_Resume_2026.pdf",
     links: {
       scholar: "https://scholar.google.com/citations?user=ondPg7wAAAAJ&hl=en",
       github: "https://github.com/NaimulHassan",
@@ -66,6 +66,33 @@ window.SITE = {
 
   publications: [
     {
+      id: "maestro",
+      group: "neuro",
+      title: "MAESTRO: A Multimodal Auditory-attention Egocentric Speech-TRacking Open corpus",
+      authors: ["K M Naimul Hassan", "Ali Alavi", "Donald S. Williamson"],
+      venue: "IEEE TASLP, 2026",
+      venueLong: "IEEE Transactions on Audio, Speech, and Language Processing (TASLP), 2026",
+      status: "Under review",
+      year: 2026,
+      thumb: "assets/img/papers/maestro_thumb.webp",
+      links: {
+        dataset: "https://huggingface.co/datasets/aspire-osu/maestro-eeg-dataset"
+      },
+      tldr: "The first auditory attention dataset that records EEG together with gaze, pupil size, egocentric video, and head motion. Adding these behavioral signals to EEG improves attention decoding for almost every listener.",
+      abstract: "Humans rely on gaze, head movements, and visual cues to attend to speakers in noisy environments, yet auditory attention decoding (AAD) has been studied primarily using electroencephalography (EEG). We introduce the Multimodal Auditory-attention Ego-centric Speech-TRacking Open (MAESTRO) corpus, the first AAD dataset to simultaneously record EEG, eye gaze, pupillometry, egocentric video, and head inertial measurement unit (IMU) data. MAESTRO includes four competing speakers and background noise across multiple signal-to-noise ratio (SNR) conditions, enabling attention decoding under realistic listening scenarios. Through a four-speaker attention decoding benchmark, we show that combining behavioral and physiological signals improves decoding performance over EEG-only approaches, enabling future advances in multimodal auditory attention decoding.",
+      highlights: [
+        "16 listeners, 1,600 trials, four competing English speakers plus background noise, attended-speaker SNR from 0 to 18 dB, in a naturally reverberant room.",
+        "Participants move their eyes and head freely, so the dataset captures natural listening behavior instead of suppressing it.",
+        "Adding gaze, video, and head motion to EEG improves four-speaker decoding at every window size, by up to 13 points, and beats EEG alone in 94% of unseen-subject cases.",
+        "The benefit nearly doubles at short 5-second windows, where EEG alone has the least context."
+      ],
+      figures: [
+        { src: "assets/img/papers/maestro_setup.webp", caption: "Four target loudspeakers sit at ±22.5° and ±67.5° in front of the listener; two noise loudspeakers sit behind at ±135°. Participants wear an EEG cap and eye-tracking glasses." },
+        { src: "assets/img/papers/maestro_gaze.webp", caption: "One trial from the dataset: egocentric video frames with gaze points overlaid, the gaze trajectory over time, and pupil diameter for both eyes." }
+      ],
+      bibtex: ""
+    },
+    {
       id: "scans",
       group: "neuro",
       title: "SCANS: Supervised Contrastive Temporal Alignment of Neural Responses and Speech Stimuli",
@@ -89,33 +116,6 @@ window.SITE = {
         { src: "assets/img/papers/scans.webp", caption: "SCANS encodes EEG and the speech envelope with dilated convolutions, lets each stream attend to the other through cross-modal attention, and trains with a supervised contrastive loss plus a match/mismatch classifier." }
       ],
       bibtex: "@inproceedings{hassan26_interspeech,\n  title     = {SCANS: Supervised Contrastive Temporal Alignment of Neural Responses and Speech Stimuli},\n  author    = {Hassan, K M Naimul and Williamson, Donald S.},\n  booktitle = {Proc. Interspeech 2026},\n  pages     = {1218--1222},\n  year      = {2026},\n  doi       = {10.21437/Interspeech.2026-2651}\n}"
-    },
-    {
-      id: "maestro",
-      group: "neuro",
-      title: "MAESTRO: A Multimodal Auditory-attention Egocentric Speech-TRacking Open corpus",
-      authors: ["K M Naimul Hassan", "Ali Alavi", "Donald S. Williamson"],
-      venue: "IEEE TASLP",
-      venueLong: "IEEE Transactions on Audio, Speech, and Language Processing",
-      status: "Under review",
-      year: 2026,
-      thumb: "assets/img/papers/maestro_thumb.webp",
-      links: {
-        dataset: "https://huggingface.co/datasets/aspire-osu/maestro-eeg-dataset"
-      },
-      tldr: "The first auditory attention dataset that records EEG together with gaze, pupil size, egocentric video, and head motion. Adding these behavioral signals to EEG improves attention decoding for almost every listener.",
-      abstract: "Humans rely on gaze, head movements, and visual cues to attend to speakers in noisy environments, yet auditory attention decoding (AAD) has been studied primarily using electroencephalography (EEG). We introduce the Multimodal Auditory-attention Ego-centric Speech-TRacking Open (MAESTRO) corpus, the first AAD dataset to simultaneously record EEG, eye gaze, pupillometry, egocentric video, and head inertial measurement unit (IMU) data. MAESTRO includes four competing speakers and background noise across multiple signal-to-noise ratio (SNR) conditions, enabling attention decoding under realistic listening scenarios. Through a four-speaker attention decoding benchmark, we show that combining behavioral and physiological signals improves decoding performance over EEG-only approaches, enabling future advances in multimodal auditory attention decoding.",
-      highlights: [
-        "16 listeners, 1,600 trials, four competing English speakers plus background noise, attended-speaker SNR from 0 to 18 dB, in a naturally reverberant room.",
-        "Participants move their eyes and head freely, so the dataset captures natural listening behavior instead of suppressing it.",
-        "Adding gaze, video, and head motion to EEG improves four-speaker decoding at every window size, by up to 13 points, and beats EEG alone in 94% of unseen-subject cases.",
-        "The benefit nearly doubles at short 5-second windows, where EEG alone has the least context."
-      ],
-      figures: [
-        { src: "assets/img/papers/maestro_setup.webp", caption: "Four target loudspeakers sit at ±22.5° and ±67.5° in front of the listener; two noise loudspeakers sit behind at ±135°. Participants wear an EEG cap and eye-tracking glasses." },
-        { src: "assets/img/papers/maestro_gaze.webp", caption: "One trial from the dataset: egocentric video frames with gaze points overlaid, the gaze trajectory over time, and pupil diameter for both eyes." }
-      ],
-      bibtex: ""
     },
     {
       id: "sscednet",

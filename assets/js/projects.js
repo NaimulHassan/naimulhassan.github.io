@@ -14,6 +14,7 @@
    ------------------------------------------------------------------ */
 (function () {
   const OSU = { src: "assets/img/logos/osu.svg", alt: "The Ohio State University" };
+  const NSF = { src: "assets/img/logos/nsf.webp", alt: "National Science Foundation" };
   const BUET = { src: "assets/img/logos/buet.png", alt: "Bangladesh University of Engineering and Technology" };
   const CSE = "Department of Computer Science and Engineering, The Ohio State University";
   const CCBS = "Center for Cognitive and Brain Sciences, The Ohio State University";
@@ -24,7 +25,7 @@
     maestro: {
       authorAff: [[1], [1], [1, 2]],
       affiliations: [CSE, CCBS],
-      logos: [OSU],
+      logos: [OSU, NSF],
       funding: "Supported by the National Science Foundation (IIS-2235228). Computing resources from the Ohio Supercomputer Center.",
       sections: [
         { id: "overview", title: "Overview", blocks: [
@@ -108,7 +109,7 @@
     scans: {
       authorAff: [[1], [1, 2]],
       affiliations: [CSE, CCBS],
-      logos: [OSU],
+      logos: [OSU, NSF],
       funding: "Supported by the National Science Foundation (IIS-2235228). Computing resources from the Ohio Supercomputer Center.",
       sections: [
         { id: "overview", title: "Overview", blocks: [

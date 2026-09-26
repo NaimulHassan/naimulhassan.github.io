@@ -12,7 +12,7 @@ window.SITE = {
       "I build models that read the brain while it listens. My work decodes EEG to find out which voice a person is attending to, aligns neural responses with the speech that caused them, and combines EEG with gaze and head motion to make those decoders work outside the lab.",
       "I'm a Graduate Research Associate in the <a href=\"https://the-aspire-group.github.io/\">ASPIRE Group</a>, advised by <a href=\"https://engineering.osu.edu/people/williamson.413\">Prof. Donald S. Williamson</a>. Before OSU, I did my B.Sc. and M.Sc. in Electrical and Electronic Engineering at BUET, working on medical audio and assistive technology."
     ],
-    seeking: "Looking for research internships in brain-computer interfaces, neural data science, and applied machine learning.",
+    seeking: "Looking for research internships in brain-computer interfaces, neural data science, multimodal learning and sensing, speech and audio processing, and applied machine learning.",
     email: "hassan.491@osu.edu",
     cv: "content/Hassan_Resume_2026.pdf",
     links: {

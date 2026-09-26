@@ -60,8 +60,8 @@ window.SITE = {
 
   publicationGroups: [
     { id: "neuro", label: "Neural decoding and brain-computer interfaces", color: "scarlet" },
-    { id: "audio", label: "Audio and speech processing", color: "indigo" },
-    { id: "health", label: "AI for healthcare and accessibility", color: "teal" }
+    { id: "health", label: "AI for healthcare and accessibility", color: "teal" },
+    { id: "audio", label: "Audio and speech processing", color: "indigo" }
   ],
 
   publications: [

@@ -106,7 +106,7 @@ window.SITE = {
       links: {
         paper: "https://www.isca-archive.org/interspeech_2026/hassan26_interspeech.pdf"
       },
-      tldr: "Given a snippet of EEG, find the speech segment it is time-locked to. A supervised contrastive model with cross-modal attention does this better than prior methods, especially for people it has never seen.",
+      tldr: "Given a snippet of EEG, find the speech segment it is time-locked to. A supervised contrastive model with cross-modal attention does this better than prior methods, especially for subjects it has never seen.",
       abstract: "Aligning non-invasive neural activity with speech stimuli is a foundational challenge in neural speech decoding. The difficulty lies in mapping noisy, high-dimensional electroencephalography (EEG) signals to the temporal dynamics of speech features. We propose SCANS, a supervised contrastive learning framework for neural-speech temporal alignment. We define this as a classification task where, given an EEG segment and multiple non-overlapping candidate segments from the same speech signal, the model must identify the single matching stimulus temporally aligned with the EEG. SCANS utilizes a dilated convolutional frontend and cross-modal attention to extract and fuse features across modalities. To bridge the modality gap, we employ a multi-task objective combining cross-entropy classification with a contrastive loss. Evaluated on the SParrKULee dataset, SCANS demonstrates significant improvement in neural-speech alignment accuracy.",
       highlights: [
         "New state of the art on the ICASSP 2024 Auditory EEG Decoding Challenge task: 69.3% accuracy on unseen listeners in 5-way matching, up from 62.8%.",

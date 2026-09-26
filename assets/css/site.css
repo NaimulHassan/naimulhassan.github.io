@@ -441,3 +441,7 @@ section.block.tinted .block-body { border-top: 0; padding-top: 0; }
 body.standalone { scroll-padding-top: 0; }
 body.standalone #paper { padding-bottom: clamp(56px, 8vw, 96px); }
 body.standalone .authors .me { font-style: normal; color: inherit; font-weight: inherit; }
+
+.btn .fa-brands { font-size: 16px; line-height: 1; }
+.btn .fa-linkedin { color: #0A66C2; }
+.btn:hover .fa-linkedin { color: inherit; }

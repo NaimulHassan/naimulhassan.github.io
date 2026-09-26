@@ -12,8 +12,8 @@
     <a class="btn primary" href="mailto:${P.email}">${U.ICONS.mail}Email</a>
     <a class="btn" href="${P.cv}">${U.ICONS.file}CV</a>
     <a class="btn" href="${P.links.scholar}">${U.ICONS.cap}Google Scholar</a>
-    <a class="btn" href="${P.links.github}">GitHub</a>
-    <a class="btn" href="${P.links.linkedin}">LinkedIn</a>`;
+    <a class="btn" href="${P.links.github}"><i class="fa-brands fa-github" aria-hidden="true"></i>GitHub</a>
+    <a class="btn" href="${P.links.linkedin}"><i class="fa-brands fa-linkedin" aria-hidden="true"></i>LinkedIn</a>`;
   window.drawTriad($("#signal-plot"));
   let rw; addEventListener("resize", () => { clearTimeout(rw); rw = setTimeout(() => { const el = $("#signal-plot"); if ((el.clientWidth < 620) !== (el.querySelector("svg").viewBox.baseVal.width < 700)) window.drawTriad(el); }, 200); });
 

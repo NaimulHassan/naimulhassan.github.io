@@ -261,7 +261,6 @@
         ] },
         { id: "results", title: "Results", blocks: [
           { list: [
-            "The object classifier reached 100% training accuracy within 10 epochs on the 9-object dataset.",
             "All components fit in a single portable box, and the estimated component cost is low compared with existing refreshable Braille technologies.",
             "The project was national champion and a world finalist at the IEEE YESIST12 Innovation Challenge 2019."
           ] }

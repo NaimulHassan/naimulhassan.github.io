@@ -59,9 +59,9 @@ window.SITE = {
   ],
 
   publicationGroups: [
-    { id: "neuro", label: "Neural decoding and brain-computer interfaces", color: "scarlet" },
-    { id: "health", label: "AI for healthcare and accessibility", color: "teal" },
-    { id: "audio", label: "Audio and speech processing", color: "indigo" }
+    { id: "neuro", label: "Neural and physiological signal decoding", color: "scarlet" },
+    { id: "audio", label: "Audio and speech processing", color: "indigo" },
+    { id: "health", label: "Assistive technology", color: "teal" }
   ],
 
   publications: [
@@ -119,34 +119,8 @@ window.SITE = {
       bibtex: "@inproceedings{hassan26_interspeech,\n  title     = {SCANS: Supervised Contrastive Temporal Alignment of Neural Responses and Speech Stimuli},\n  author    = {Hassan, K M Naimul and Williamson, Donald S.},\n  booktitle = {Proc. Interspeech 2026},\n  pages     = {1218--1222},\n  year      = {2026},\n  doi       = {10.21437/Interspeech.2026-2651}\n}"
     },
     {
-      id: "sscednet",
-      group: "health",
-      title: "SS+CEDNet: A Speech Privacy Aware Cough Detection Pipeline by Separating Sources",
-      authors: ["K M Naimul Hassan", "Mohammad Ariful Haque"],
-      venue: "IEEE R10-HTC 2022",
-      venueLong: "IEEE Region 10 Humanitarian Technology Conference (R10-HTC), 2022",
-      status: "Published",
-      year: 2022,
-      thumb: "assets/img/papers/sscednet.webp",
-      links: {
-        paper: "content/papers/SS+CEDNet.pdf",
-        code: "https://github.com/NaimulHassan/SS-CEDNet"
-      },
-      tldr: "Separate cough from background speech first, then detect coughs on the clean channel. Detection gets more accurate and conversations stay private.",
-      abstract: "Cough is one of the most distinguishable symptoms for Influenza-like-illness (ILI) and Severe Acute Respiratory Infection (SARI). Background speech events make it difficult for algorithms to detect cough events, and the performance of the models drops significantly. At the same time, speech privacy is not preserved in traditional cough detection models. We propose a pipeline, SS+CEDNet, consisting of a Source Separation (SS) and a Cough Event Detection (CED) model. The SS model first separates the cough and speech sources, and the separated cough source is then passed through the CED model to detect cough events. The pipeline preserves speech privacy by separating the sources and also shows better cough detection accuracy.",
-      highlights: [
-        "Cough-detection F1 rises from 87% to 99% with YAMNet, and all four detectors tested improve.",
-        "No speech-overlapped audio is thrown away, unlike earlier privacy-preserving approaches that discard those segments.",
-        "Wave-U-Net separates the sources at 11.87 dB overall SDR."
-      ],
-      figures: [
-        { src: "assets/img/papers/sscednet.webp", caption: "Mixed audio is split into cough and speech sources; only the cough source is segmented and passed to the cough event detector." }
-      ],
-      bibtex: "@inproceedings{hassan2022sscednet,\n  title     = {SS+CEDNet: A Speech Privacy Aware Cough Detection Pipeline by Separating Sources},\n  author    = {Hassan, K. M. Naimul and Haque, Mohammad Ariful},\n  booktitle = {2022 IEEE 10th Region 10 Humanitarian Technology Conference (R10-HTC)},\n  pages     = {32--37},\n  year      = {2022},\n  doi       = {10.1109/R10-HTC54060.2022.9929794}\n}"
-    },
-    {
       id: "alsnet",
-      group: "health",
+      group: "neuro",
       title: "ALSNet: A Dilated 1-D CNN for Identifying ALS from Raw EMG Signal",
       authors: ["K M Naimul Hassan", "Md. Shamiul Alam Hridoy", "Naima Tasnim", "Atia Faria Chowdhury", "Tanvir Alam Roni", "Sheikh Tabrez", "Arik Subhana", "Celia Shahnaz"],
       venue: "ICASSP 2022",
@@ -216,6 +190,32 @@ window.SITE = {
         { src: "assets/img/papers/asfnet.webp", caption: "Average mAP, parameter count, and model size for AST and ASFNet variants." }
       ],
       bibtex: "@misc{hassan2023asfnet,\n  title     = {ASFNet: Audio Spectrogram Fourier Network for Efficient Medical Sound Event Detection},\n  author    = {Hassan, K. M. Naimul and Haque, Mohammad Ariful},\n  year      = {2023},\n  publisher = {TechRxiv},\n  doi       = {10.36227/techrxiv.23732205.v1}\n}"
+    },
+    {
+      id: "sscednet",
+      group: "audio",
+      title: "SS+CEDNet: A Speech Privacy Aware Cough Detection Pipeline by Separating Sources",
+      authors: ["K M Naimul Hassan", "Mohammad Ariful Haque"],
+      venue: "IEEE R10-HTC 2022",
+      venueLong: "IEEE Region 10 Humanitarian Technology Conference (R10-HTC), 2022",
+      status: "Published",
+      year: 2022,
+      thumb: "assets/img/papers/sscednet.webp",
+      links: {
+        paper: "content/papers/SS+CEDNet.pdf",
+        code: "https://github.com/NaimulHassan/SS-CEDNet"
+      },
+      tldr: "Separate cough from background speech first, then detect coughs on the clean channel. Detection gets more accurate and conversations stay private.",
+      abstract: "Cough is one of the most distinguishable symptoms for Influenza-like-illness (ILI) and Severe Acute Respiratory Infection (SARI). Background speech events make it difficult for algorithms to detect cough events, and the performance of the models drops significantly. At the same time, speech privacy is not preserved in traditional cough detection models. We propose a pipeline, SS+CEDNet, consisting of a Source Separation (SS) and a Cough Event Detection (CED) model. The SS model first separates the cough and speech sources, and the separated cough source is then passed through the CED model to detect cough events. The pipeline preserves speech privacy by separating the sources and also shows better cough detection accuracy.",
+      highlights: [
+        "Cough-detection F1 rises from 87% to 99% with YAMNet, and all four detectors tested improve.",
+        "No speech-overlapped audio is thrown away, unlike earlier privacy-preserving approaches that discard those segments.",
+        "Wave-U-Net separates the sources at 11.87 dB overall SDR."
+      ],
+      figures: [
+        { src: "assets/img/papers/sscednet.webp", caption: "Mixed audio is split into cough and speech sources; only the cough source is segmented and passed to the cough event detector." }
+      ],
+      bibtex: "@inproceedings{hassan2022sscednet,\n  title     = {SS+CEDNet: A Speech Privacy Aware Cough Detection Pipeline by Separating Sources},\n  author    = {Hassan, K. M. Naimul and Haque, Mohammad Ariful},\n  booktitle = {2022 IEEE 10th Region 10 Humanitarian Technology Conference (R10-HTC)},\n  pages     = {32--37},\n  year      = {2022},\n  doi       = {10.1109/R10-HTC54060.2022.9929794}\n}"
     },
     {
       id: "doanet",

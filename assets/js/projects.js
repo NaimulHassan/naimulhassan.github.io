@@ -98,7 +98,7 @@
         ] },
         { id: "download", title: "Download", blocks: [
           { p: "The dataset includes all loudspeaker streams, the naturally mixed audio, EEG, gaze, pupil, video, and IMU for every trial, along with per-trial comprehension labels, per-subject gaze-quality statistics, and the official train/test splits for both evaluation settings." },
-          { links: [["Dataset on Hugging Face", "https://huggingface.co/datasets/aspire-osu/maestro-eeg-dataset"], ["Code", "https://github.com/saliAlavi/maestro_eeg_dataset_analysis"]] },
+          { links: [["Dataset on Hugging Face", "https://huggingface.co/datasets/aspire-osu/maestro-eeg-dataset"], ["Code", "https://github.com/ASPIRE-OSU/MAESTRO"]] },
           { p: "<b>Note on the audio.</b> The SNR adjustment clipped the attended talker's channel in the released recordings, which leaves a detectable envelope cue. The benchmark removes it with histogram equalization across the four envelopes; anyone using the raw audio for other tasks should account for it." }
         ] },
         { id: "citation", title: "Citation", blocks: "citation" }

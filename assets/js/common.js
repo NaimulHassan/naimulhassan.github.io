@@ -34,7 +34,7 @@
   function linkButtons(p, opts = {}) {
     const L = p.links || {};
     const out = [];
-    if (opts.project) out.push(`<a class="btn primary" href="paper.html?id=${p.id}">${ICONS.page}Project page</a>`);
+    if (opts.project) out.push(`<a class="btn primary" target="_blank" rel="noopener" href="paper.html?id=${p.id}">${ICONS.page}Project page</a>`);
     if (L.paper) out.push(`<a class="btn" href="${L.paper}">${ICONS.file}Paper</a>`);
     if (L.code) out.push(`<a class="btn" href="${L.code}">${ICONS.code}Code</a>`);
     if (L.dataset) out.push(`<a class="btn" href="${L.dataset}">${ICONS.data}Dataset</a>`);

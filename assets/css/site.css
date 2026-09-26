@@ -436,3 +436,8 @@ section.block.tinted .block-body { border-top: 0; padding-top: 0; }
 .thread-art-wrap { background: var(--accent-tint); border-radius: 8px; margin: -4px -4px 18px; padding: 8px 6px; }
 .thread-art { width: 100%; height: auto; display: block; }
 .thread-art .art-lbl { font: 500 11px var(--sans); fill: var(--slate); }
+
+/* Standalone project pages: no site chrome, plain author names */
+body.standalone { scroll-padding-top: 0; }
+body.standalone #paper { padding-bottom: clamp(56px, 8vw, 96px); }
+body.standalone .authors .me { font-style: normal; color: inherit; font-weight: inherit; }

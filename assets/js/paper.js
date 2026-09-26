@@ -5,21 +5,20 @@
   const root = document.getElementById("paper");
 
   if (!p) {
-    root.innerHTML = `<div class="not-found"><a class="back" href="index.html#publications">${U.ICONS.back}All publications</a>
+    root.innerHTML = `<div class="not-found">
       <h1 style="font-family:var(--serif);font-weight:500">This project page doesn't exist</h1>
-      <p>Check the link, or pick a paper from the publication list.</p></div>`;
+      <p>Please check the link.</p></div>`;
     U.initChrome();
     return;
   }
 
-  document.title = `${p.title.split(":")[0]} · K M Naimul Hassan`;
+  document.title = p.title.split(":")[0];
 
   const figs = (p.figures || []).map(f => `
     <figure class="figure"><img src="${f.src}" alt="${f.caption}" loading="lazy"><figcaption>${f.caption}</figcaption></figure>`);
 
   root.innerHTML = `
     <div class="paper-hero">
-      <a class="back" href="index.html#pub-${p.id}">${U.ICONS.back}All publications</a>
       <h1>${p.title}</h1>
       <p class="authors">${U.authors(p.authors)}</p>
       ${p.authorNote ? `<p class="note">${p.authorNote}</p>` : ""}

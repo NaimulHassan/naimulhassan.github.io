@@ -76,9 +76,10 @@ window.SITE = {
       year: 2026,
       thumb: "assets/img/papers/maestro_thumb.webp",
       links: {
-        dataset: "https://huggingface.co/datasets/aspire-osu/maestro-eeg-dataset"
+        dataset: "https://huggingface.co/datasets/aspire-osu/maestro-eeg-dataset",
+        code: "https://github.com/saliAlavi/maestro_eeg_dataset_analysis"
       },
-      tldr: "The first auditory attention dataset that records EEG together with gaze, pupil size, egocentric video, and head motion. Adding these behavioral signals to EEG improves attention decoding for almost every listener.",
+      tldr: "MAESTRO captures how people actually listen: EEG recorded alongside gaze, pupil size, egocentric video, and head motion while listeners follow one of four talkers in noise and move freely. It opens up questions EEG alone can't answer, and shows that combining brain and behavioral signals decodes attention more accurately than EEG alone.",
       abstract: "Humans rely on gaze, head movements, and visual cues to attend to speakers in noisy environments, yet auditory attention decoding (AAD) has been studied primarily using electroencephalography (EEG). We introduce the Multimodal Auditory-attention Ego-centric Speech-TRacking Open (MAESTRO) corpus, the first AAD dataset to simultaneously record EEG, eye gaze, pupillometry, egocentric video, and head inertial measurement unit (IMU) data. MAESTRO includes four competing speakers and background noise across multiple signal-to-noise ratio (SNR) conditions, enabling attention decoding under realistic listening scenarios. Through a four-speaker attention decoding benchmark, we show that combining behavioral and physiological signals improves decoding performance over EEG-only approaches, enabling future advances in multimodal auditory attention decoding.",
       highlights: [
         "16 listeners, 1,600 trials, four competing English speakers plus background noise, attended-speaker SNR from 0 to 18 dB, in a naturally reverberant room.",

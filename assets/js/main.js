@@ -22,7 +22,7 @@
   $("#news-list").innerHTML = D.news.map((n, i) => `
     <li class="${i >= SHOW ? "hidden" : ""}">
       <time>${n.date}</time>
-      <div>${(n.tags || []).map(t => `<span class="kind k-${t.toLowerCase()}">${t}</span>`).join("")}${n.html}${n.link ? ` <a href="${n.link.href}">${n.link.text}</a>` : n.paper ? ` <a href="paper.html?id=${n.paper}">${n.linkText || "Read more"}</a>` : ""}</div>
+      <div>${(n.tags || []).map(t => `<span class="kind k-${t.toLowerCase()}">${t}</span>`).join("")}${n.html}${n.link ? ` <a href="${n.link.href}">${n.link.text}</a>` : n.paper ? ` <a target="_blank" rel="noopener" href="paper.html?id=${n.paper}">${n.linkText || "Read more"}</a>` : ""}</div>
     </li>`).join("");
   const moreBtn = $("#news-more");
   if (D.news.length > SHOW) {
@@ -42,7 +42,7 @@
       ${r.art && window.researchArt ? `<div class="thread-art-wrap">${window.researchArt(r.art)}</div>` : ""}
       <h3>${r.title}</h3>
       <p>${r.text}</p>
-      ${r.paper ? `<a href="paper.html?id=${r.paper}">See the project</a>` : `<span class="ongoing">In progress</span>`}
+      ${r.paper ? `<a target="_blank" rel="noopener" href="paper.html?id=${r.paper}">See the project</a>` : `<span class="ongoing">In progress</span>`}
     </div>`).join("");
 
   /* ---------- Publications ---------- */
@@ -51,9 +51,9 @@
     if (!items.length) return "";
     return `<div class="pub-group c-${g.color || "scarlet"}"><h3><span class="dot"></span>${g.label}</h3>${items.map(p => `
       <article class="pub" id="pub-${p.id}">
-        <a class="thumb" href="paper.html?id=${p.id}" aria-label="Project page for ${p.title}"><img src="${p.thumb}" alt="" loading="lazy"></a>
+        <a class="thumb" target="_blank" rel="noopener" href="paper.html?id=${p.id}" aria-label="Project page for ${p.title}"><img src="${p.thumb}" alt="" loading="lazy"></a>
         <div>
-          <h4><a href="paper.html?id=${p.id}">${p.title}</a></h4>
+          <h4><a target="_blank" rel="noopener" href="paper.html?id=${p.id}">${p.title}</a></h4>
           <p class="authors">${U.authors(p.authors)}</p>
           <p class="venue-line">${U.venue(p)}${U.statusTag(p.status)}</p>
           <div class="actions">
@@ -96,7 +96,7 @@
       <div>
         <h4>${p.title}</h4>
         <p class="meta">${p.venue}${p.result ? `, <span class="result">${p.result}</span>` : ""}</p>
-        <p>${p.text} ${p.paper ? `<a class="more" href="paper.html?id=${p.paper}">Paper</a>` : p.report ? `<a class="more" href="${p.report}">Report</a>` : ""}</p>
+        <p>${p.text} ${p.paper ? `<a class="more" target="_blank" rel="noopener" href="paper.html?id=${p.paper}">Paper</a>` : p.report ? `<a class="more" href="${p.report}">Report</a>` : ""}</p>
       </div>
     </div>`).join("");
 

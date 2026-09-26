@@ -515,3 +515,5 @@ body.standalone { background: var(--white); }
 .table-wrap figcaption { margin-top: 10px; font-size: 14.5px; color: var(--slate); text-align: center; }
 .funding { font-size: 14.5px; color: var(--slate); text-align: center; margin-top: 18px; }
 .not-found { text-align: center; padding: 120px 20px; }
+
+.tag.thesis { background: var(--gold-tint); color: #8A5E00; }

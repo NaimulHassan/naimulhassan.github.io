@@ -169,6 +169,7 @@ window.SITE = {
     },
     {
       id: "asfnet",
+      msThesis: true,
       group: "audio",
       title: "ASFNet: Audio Spectrogram Fourier Network for Efficient Medical Sound Event Detection",
       authors: ["K M Naimul Hassan", "Mohammad Ariful Haque"],
@@ -178,6 +179,7 @@ window.SITE = {
       year: 2023,
       thumb: "assets/img/papers/asfnet_thumb.webp",
       links: {
+        thesis: "http://lib.buet.ac.bd:8080/xmlui/bitstream/handle/123456789/6626/Full%20Thesis.pdf?sequence=1&isAllowed=y",
         paper: "https://doi.org/10.36227/techrxiv.23732205.v1"
       },
       tldr: "Swap the attention in an audio transformer for a Fourier transform. The model gets more accurate on scarce medical audio and smaller at the same time.",
@@ -193,6 +195,7 @@ window.SITE = {
     },
     {
       id: "sscednet",
+      msThesis: true,
       group: "audio",
       title: "SS+CEDNet: A Speech Privacy Aware Cough Detection Pipeline by Separating Sources",
       authors: ["K M Naimul Hassan", "Mohammad Ariful Haque"],
@@ -202,6 +205,7 @@ window.SITE = {
       year: 2022,
       thumb: "assets/img/papers/sscednet.webp",
       links: {
+        thesis: "http://lib.buet.ac.bd:8080/xmlui/bitstream/handle/123456789/6626/Full%20Thesis.pdf?sequence=1&isAllowed=y",
         paper: "content/papers/SS+CEDNet.pdf",
         code: "https://github.com/NaimulHassan/SS-CEDNet"
       },

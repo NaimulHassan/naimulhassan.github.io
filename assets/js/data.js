@@ -59,9 +59,9 @@ window.SITE = {
   ],
 
   publicationGroups: [
-    { id: "neuro", label: "Neural and physiological signal decoding", color: "scarlet" },
+    { id: "neuro", label: "Neural decoding and brain-computer interfaces", color: "scarlet" },
     { id: "audio", label: "Audio and speech processing", color: "indigo" },
-    { id: "health", label: "Assistive technology", color: "teal" }
+    { id: "health", label: "AI for healthcare and accessibility", color: "teal" }
   ],
 
   publications: [
@@ -120,7 +120,7 @@ window.SITE = {
     },
     {
       id: "alsnet",
-      group: "neuro",
+      group: "health",
       title: "ALSNet: A Dilated 1-D CNN for Identifying ALS from Raw EMG Signal",
       authors: ["K M Naimul Hassan", "Md. Shamiul Alam Hridoy", "Naima Tasnim", "Atia Faria Chowdhury", "Tanvir Alam Roni", "Sheikh Tabrez", "Arik Subhana", "Celia Shahnaz"],
       venue: "ICASSP 2022",

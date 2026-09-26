@@ -516,4 +516,5 @@ body.standalone { background: var(--white); }
 .funding { font-size: 14.5px; color: var(--slate); text-align: center; margin-top: 18px; }
 .not-found { text-align: center; padding: 120px 20px; }
 
-.tag.thesis { background: var(--gold-tint); color: #8A5E00; }
+
+.tag.degree { background: #F7F8F9; color: #7A848A; font-weight: 500; box-shadow: inset 0 0 0 1px #E6EAEC; }

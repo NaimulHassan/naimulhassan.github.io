@@ -55,7 +55,7 @@
         <div>
           <h4><a target="_blank" rel="noopener" href="paper.html?id=${p.id}">${p.title}</a></h4>
           <p class="authors">${U.authors(p.authors)}</p>
-          <p class="venue-line">${U.venue(p)}${U.statusTag(p.status)}${p.msThesis ? `<span class="tag thesis">M.Sc. Thesis</span>` : ""}</p>
+          <p class="venue-line">${U.venue(p)}${U.statusTag(p.status)}${p.degreeTag ? `<span class="tag degree">${p.degreeTag}</span>` : ""}</p>
           <div class="actions">
             ${U.linkButtons(p, { project: true })}
             <button class="btn abstract-toggle" aria-expanded="false" aria-controls="abs-${p.id}">Abstract ${U.ICONS.chevron}</button>

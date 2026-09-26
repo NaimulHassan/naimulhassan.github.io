@@ -55,7 +55,7 @@
       <p class="proj-authors">${authors}</p>
       ${affs ? `<p class="proj-affs">${affs}</p>` : ""}
       ${logos ? `<div class="proj-logos">${logos}</div>` : ""}
-      <p class="venue-line">${U.venue(p, true)}${U.statusTag(p.status)}${p.msThesis ? `<span class="tag thesis">M.Sc. Thesis</span>` : ""}</p>
+      <p class="venue-line">${U.venue(p, true)}${U.statusTag(p.status)}${p.degreeTag ? `<span class="tag degree">${p.degreeTag}</span>` : ""}</p>
       <div class="links">${U.linkButtons(p)}</div>
       ${p.tldr ? `<p class="tldr">${p.tldr}</p>` : ""}
     </header>

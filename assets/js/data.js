@@ -67,6 +67,7 @@ window.SITE = {
   publications: [
     {
       id: "maestro",
+      degreeTag: "Ph.D. Research",
       group: "neuro",
       title: "MAESTRO: A Multimodal Auditory-attention Egocentric Speech-TRacking Open corpus",
       authors: ["K M Naimul Hassan", "Ali Alavi", "Donald S. Williamson"],
@@ -95,6 +96,7 @@ window.SITE = {
     },
     {
       id: "scans",
+      degreeTag: "Ph.D. Research",
       group: "neuro",
       title: "SCANS: Supervised Contrastive Temporal Alignment of Neural Responses and Speech Stimuli",
       authors: ["K M Naimul Hassan", "Donald S. Williamson"],
@@ -169,7 +171,7 @@ window.SITE = {
     },
     {
       id: "asfnet",
-      msThesis: true,
+      degreeTag: "M.Sc. Thesis",
       group: "audio",
       title: "ASFNet: Audio Spectrogram Fourier Network for Efficient Medical Sound Event Detection",
       authors: ["K M Naimul Hassan", "Mohammad Ariful Haque"],
@@ -195,7 +197,7 @@ window.SITE = {
     },
     {
       id: "sscednet",
-      msThesis: true,
+      degreeTag: "M.Sc. Thesis",
       group: "audio",
       title: "SS+CEDNet: A Speech Privacy Aware Cough Detection Pipeline by Separating Sources",
       authors: ["K M Naimul Hassan", "Mohammad Ariful Haque"],

@@ -93,7 +93,7 @@ window.SITE = {
         { src: "assets/img/papers/maestro_setup.webp", caption: "Four target loudspeakers sit at ±22.5° and ±67.5° in front of the listener; two noise loudspeakers sit behind at ±135°. Participants wear an EEG cap and eye-tracking glasses." },
         { src: "assets/img/papers/maestro_gaze.webp", caption: "One trial from the dataset: egocentric video frames with gaze points overlaid, the gaze trajectory over time, and pupil diameter for both eyes." }
       ],
-      bibtex: ""
+      bibtex: "@misc{hassan2026maestromultimodalauditoryattentionegocentric,\n      title={MAESTRO: a Multimodal Auditory-attention Egocentric Speech-TRacking Open corpus}, \n      author={K M Naimul Hassan and Ali Alavi and Donald S. Williamson},\n      year={2026},\n      eprint={2609.31898},\n      archivePrefix={arXiv},\n      primaryClass={eess.AS},\n      url={https://arxiv.org/abs/2609.31898}, \n}"
     },
     {
       id: "scans",

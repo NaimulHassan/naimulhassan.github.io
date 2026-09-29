@@ -77,6 +77,7 @@ window.SITE = {
       year: 2026,
       thumb: "assets/img/papers/maestro_thumb.webp",
       links: {
+        preprint: "https://arxiv.org/abs/2609.31898",
         dataset: "https://huggingface.co/datasets/aspire-osu/maestro-eeg-dataset",
         code: "https://github.com/ASPIRE-OSU/MAESTRO"
       },
